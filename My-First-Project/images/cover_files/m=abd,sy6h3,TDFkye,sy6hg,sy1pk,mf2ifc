@@ -1,0 +1,17 @@
+loaded_h_0(function(_){var window=this;
+_.v("abd");
+var set,tet,uet,zet,Aet,Cet,Det;set=function(a){typeof a==="string"&&(a=_.nm(a));if(a)return _.Um(a,"display")!=="none"&&_.Um(a,"visibility")!=="hidden"&&a.offsetHeight>0};tet=function(a){let b="",c=21;for(let d=0;d<a.length;d++)d%4!=3&&(b+=String.fromCharCode(a[d]^c),c++);return b};uet=function(a){let b=0;for(const c in a)if(a[c].e)if(a[c].b)b++;else return!1;return b>0};zet=function(a={}){const b={};b[vet]={e:!!a[vet],b:!set(wet)};b[xet]={e:!!a[xet],b:!set(yet)};return b};
+Aet=function(a){const b=[];for(const c in a)a[c].e&&b.push(`${c}:`+(a[c].b?"1":"0"));return b.join(",")};Cet=function(a,b){a=String(a);b&&(a+=`,${b}`);google.log(Bet,a)};Det=function(a,b,c=2){if(c<1)Cet(7,b);else{var d=new Image;d.onerror=()=>{Det(a,b,c-1)};d.src=a}};_.Het=function(a={}){if(a[Eet]&&set(Fet)){a=zet(a);var b=Aet(a);uet(a)?Cet(1,"0,"+b):Cet(0,b);(0,_.Cf)(()=>{Det(Get,"aa")})}};var wet=tet([97,119,115,111,107]),yet=tet([97,119,115,111,107,123]),Fet=tet([118,115,121,107,108,124,104,119,68,127,114,105,114]),Bet=tet([101,126,118,102,118,125,118,109,126]),Eet=tet([116,116,115,108]),vet=tet([113,115,99,107]),xet=tet([113,115,117,107]),Get=tet([58,127,122,103,121,126,127,98,104,51,109,124,118,123,15,76,81,90,13,95,67,76,64,118]);_.OHa||_.ph("abd",{init:_.Het});
+_.w();
+_.ret=_.y("TDFkye",[]);
+_.v("TDFkye");
+_.fs(_.ret,class extends _.ds{constructor(a){super(a.Oa);_.Het(google.pmc.abd)}});
+_.w();
+_.xjt=_.y("mf2ifc",[]);
+var PDd,RDd,TDd;PDd=function(a){var b;(b=!a.parentElement)||(a.ownerDocument&&a.ownerDocument.defaultView?(b=a.ownerDocument.defaultView.getComputedStyle(a))&&b.visibility==="hidden"?b=!1:(b=a.getBoundingClientRect(),b=b.width>0&&b.height>0):b=!0);return b?a:PDd(a.parentElement)};RDd=function(a){if(a){var b=new QDd;for(const f of Object.keys(a)){var c=document.getElementById(f)||document.documentElement.querySelector(`img[data-iid="${f}"]`);if(c){var d=b,e=a[f];d.oa.oa(c,e)||d.Aa.oa(c,e)}}}};
+_.SDd=function(){RDd(google.ldi);RDd(google.pim);google.lfj?google.sx(null,()=>{RDd(google.ldilf)}):google.dclc(()=>{RDd(google.ldilf)})};TDd=class{constructor(a){this.rootMargin=a;this.hj=null}hMa(){if(this.hj)return!0;try{return this.hj=new IntersectionObserver((a,b)=>{a=a.filter(c=>c.isIntersecting);for(const c of a)a=c.target,this.Ca(a),b.unobserve(a)},{rootMargin:this.rootMargin,threshold:[0]}),!0}catch(a){return!1}}};var UDd=class extends TDd{constructor(){super("0px");this.Aa=new Map;this.Ba=new Map}oa(a,b){if(a.hasAttribute("data-atf"))return!1;if(this.hMa()){this.Ba.set(a,b);b=PDd(a);if(b===a){var c;a:{for(c=a;c;c=c.parentElement)if(c.tagName==="G-SCROLLING-CAROUSEL"||c.classList.contains("XNfAUb"))break a;c=null}c&&(b=c)}(c=this.Aa.get(b))?c.push(a):this.Aa.set(b,[a]);this.hj.observe(b);return!0}return!1}Ca(a){if(a=this.Aa.get(a))for(const b of a)a=this.Ba.get(b),_.yTb(b,a)}};var VDd=class extends TDd{constructor(){super("400px");this.Aa=new Map}oa(a,b){(google.c.timl||Number(a.getAttribute("data-atf"))&1?0:this.hMa())?(this.Aa.set(a,b),this.hj.observe(a)):_.yTb(a,b);return!0}Ca(a){const b=this.Aa.get(a);_.yTb(a,b)}};var QDd=class{constructor(){this.oa=new UDd;this.Aa=new VDd}};
+_.v("mf2ifc");
+_.fs(_.xjt,class extends _.ds{constructor(a){super(a.Oa);_.SDd()}});
+_.w();
+});
+// Google Inc.
