@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    margin: 0;
+    font-family: "Hi Melody", sans-serif;
+    color: rgb(105, 85, 171);
+}
+.mainWrapper{
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(255, 236, 253);
+    width: 70%;
+    height: 1000px;
+    padding-top: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.headerWrapper {
+    
+    /* margin: 2%; */
+    /* margin-top: 50px; */
+    font-size: 250%;
+    background-color: rgb(224, 187, 221);
+}
+
+
+.topics {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-right: 0;
+    background-color: rgb(209, 191, 208);
+    width: 24%;
+    height: 40px;
+    display: inline-block;
+}
+.word{
+    /* text-align: center; */
+    margin-top: 8px;
+    font-size: 20px;
+}

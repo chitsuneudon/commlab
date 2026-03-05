@@ -1,0 +1,36 @@
+
+
+body{
+    margin: 0%;
+    background-color: antiquewhite;
+    font-family: "Hi Melody", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+p{
+    color: rgb(173, 104, 116);
+    background-color: rgba(247, 211, 235, 0.296);   
+    margin: 0;
+}
+
+div{
+    border-width: 1px;
+    border-color: rgb(225, 166, 218);
+    border-style: solid;
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(255, 248, 254);
+}
+
+/* div p{
+    background-color: rgb(211, 235, 255);
+} */
+
+.box1{
+    background-color: rgb(245, 207, 244);
+}
+
+.box2 {
+    background-color: rgb(255, 187, 187);
+}

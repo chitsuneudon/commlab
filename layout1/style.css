@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    height: 1500px;
+}
+
+div {
+    outline: black 1px dotted;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    padding: 2%;
+    
+}
+p {
+    background-color: aqua;
+}
+.one {
+    position: static;
+    
+}
+.two {
+    position: absolute;
+    left: 500px;
+    top: 300px;
+}
+.three {
+    position: fixed;
+    right: 5%;
+    top: 10%;
+}
+.five {
+    position: sticky;
+    top: 0px;
+    left: 100px;
+}
+.seven {
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    height: 50vh;
+}
+.sevenschild {
+    outline: green 1px dotted;
+    width: 50px;
+}
+.sevenschild p{
+    background-color: black;
+    color: greenyellow;
+}
