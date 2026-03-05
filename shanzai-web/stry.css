@@ -1,0 +1,288 @@
+
+.fadeIn {
+    opacity: 0;
+    pointer-events: none
+}
+
+.fadeIn.show {
+    -webkit-transition: opacity .5s ease-in-out .2s;
+    transition: opacity .5s ease-in-out .2s;
+    opacity: 1!important;
+    pointer-events: auto
+}
+ul li div a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline
+}
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+body {
+    width: 100vw;
+    height: 100svh;
+    overflow: hidden
+}
+
+body #container {
+    width: 100%;
+    height: 100%
+}
+body .monitor-contents {
+    width: 100%;
+    height: 100svh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    pointer-events: none
+}
+body .monitor-overlay {
+    background: url(/assets/monitor_overlay.png) 0 0 repeat;
+    height: 100svh;
+    top: 0;
+    z-index: -4;
+    mix-blend-mode: soft-light
+}
+body .monitor-gradient,body .monitor-overlay {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    pointer-events: none
+}
+body .monitor-gradient {
+    background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.5)));
+    background: linear-gradient(180deg,transparent,rgba(0,0,0,.5));
+    height: 45%;
+    bottom: 0;
+    z-index: -3
+}
+body .monitor-frame {
+    background: url(/assets/frame.png) 50% no-repeat;
+    background-size: 100% 100%!important;
+    width: 100vw;
+    height: 100svh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    pointer-events: none
+}
+body .text-decoration p {
+    width: 100%;
+    height: 100svh;
+    pointer-events: none;
+    position: absolute
+}
+body .text-decoration p {
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .21em;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+body .text-decoration p span {
+    color: #ffc5ff;
+    /* color: var(--color-yellow) */
+}
+
+body h1 {
+    width: 537px;
+    top: 9.5vh;
+    left: .5vw
+}
+body .trailer,body h1 {
+    margin: auto;
+    position: absolute;
+    right: 0
+}
+body .trailer {
+    width: 391px;
+    height: 126px;
+    top: 44.7vh;
+    left: 0;
+    mix-blend-mode: screen
+}
+body .trailer>span {
+    width: 376px;
+    height: 111px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: screen;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out
+}
+body .trailer-pink {
+    -webkit-animation: f 2s ease-in-out infinite;
+    animation: f 2s ease-in-out infinite
+}
+body .trailer-blue {
+    -webkit-animation: g 3s ease-in-out infinite;
+    animation: g 3s ease-in-out infinite
+}
+body .trailer-text {
+    width: 210px;
+    height: 41px;
+    margin: auto;
+    top: 44.7vh;
+    margin-top: 43px;
+    pointer-events: none!important
+}
+body .store,body .trailer-text {
+    position: absolute;
+    left: 0;
+    right: 0
+}
+body .store {
+    width: 852px;
+    background: rgba(0,0,0,.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 19px 0;
+    top: 61.3vh
+}
+
+body .store-title {
+    width: 412px;
+    position: relative;
+    margin: auto;
+    z-index: 2
+}
+body .store-box {
+    margin-top: 1vw;
+    z-index: 2
+}
+body .store-box,body .store-box .store-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative
+}
+body .store-box .store-btn {
+    width: 180px;
+    height: 40px;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(15.75%,#ffcce8),color-stop(63.86%,#e8c500),color-stop(85.73%,#e1a900));
+    background: linear-gradient(180deg,#ffcce8 15.75%,#e4afcc 63.86%,#aa7a95 85.73%);
+    color: #2e2e2a;
+    color: var(--color-black);
+    border-radius: 20px;
+    font-size: 18px;
+    letter-spacing: .03em;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 700;
+    text-decoration: none;
+    overflow: hidden;
+    margin: 0 6px
+}
+/* body .store-box .store-btn.close {
+    opacity: .3;
+    -webkit-filter: saturate(0);
+    filter: saturate(0);
+    pointer-events: none
+}
+
+body .store-box .store-btn span {
+    position: relative;
+    z-index: 2
+}
+
+body .store-box .store-btn:after {
+    content: "";
+    width: 110%;
+    height: 150%;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(15.75%,#00deff),color-stop(85.73%,#0af));
+    background: linear-gradient(180deg,#00deff 15.75%,#0af 85.73%);
+    -webkit-transform: matrix(1,0,-.51,.86,0,0) scaleX(0);
+    transform: matrix(1,0,-.51,.86,0,0) scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    position: absolute;
+    top: -.5vw;
+    left: -.5vw
+} */
+header .pages-box {
+        height: 2.96296vh;
+        overflow: hidden;
+        /* transition: height 0.4s ease; */
+    }
+header .pages-box:hover {
+        height: 37.03704vh;
+        overflow: visable;
+    }
+    header .pages-box .change-page {
+        font-size: 3vh;
+        border-radius: 2.22222vh;
+        padding: 3vh 3.2vh
+    }
+    header .pages-box .change-page:after {
+        border-width: .05vw;
+        border-radius: 2.22222vh
+    }
+
+    header .pages-box .page-list {
+        border-radius: 1.38889vh;
+        margin-top: 0.92593vh;
+        padding: 3vh 3.2vh;
+        list-style: none;
+    }
+    header .pages-box .page-list li a {
+        font-size: 4vh;
+        padding: 0.83333vh 1.75926vh;
+    }
+     body h1 {
+        width: 55vh;
+        height: 35.18519vh
+    }
+
+body .monitor-contents {
+    width: 100%;
+    height: 100svh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    pointer-events: none
+}
+
+body .monitor-contents:after {
+    content: "";
+    background: rgba(0,0,0,.1)
+}
+
+body .monitor-contents:after,body .monitor-contents video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
