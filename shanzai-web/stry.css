@@ -238,6 +238,7 @@ header .pages-box {
 header .pages-box:hover {
         height: 37.03704vh;
         overflow: visable;
+        width: 100px;
     }
     header .pages-box .change-page {
         font-size: 3vh;
