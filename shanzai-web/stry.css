@@ -45,6 +45,7 @@ body .monitor-contents {
 body .monitor-overlay {
     background: url(/assets/monitor_overlay.png) 0 0 repeat;
     height: 100svh;
+    width: auto;
     top: 0;
     z-index: -4;
     mix-blend-mode: soft-light
