@@ -45,7 +45,6 @@ body .monitor-contents {
 body .monitor-overlay {
     background: url(/assets/monitor_overlay.png) 0 0 repeat;
     height: 100svh;
-    width: auto;
     top: 0;
     z-index: -4;
     mix-blend-mode: soft-light
@@ -64,15 +63,15 @@ body .monitor-gradient {
     z-index: -3
 }
 body .monitor-frame {
-    background: url(/assets/frame.png) 50% no-repeat;
-    background-size: 100% 100%!important;
+    background: url(assets/frame.png) 50% no-repeat;
+    background-size: 100% 100% !important;
     width: 100vw;
     height: 100svh;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    top: 0;
+    left: 0;
+    /* -webkit-transform: translate(-50%,-50%); */
+    /* transform: translate(-50%,-50%); */
     z-index: -1;
     pointer-events: none
 }
@@ -231,20 +230,25 @@ body .store-box .store-btn:after {
     left: -.5vw
 } */
 header .pages-box {
-        height: 2.96296vh;
-        overflow: hidden;
-        /* transition: height 0.4s ease; */
+        height: 2.96296vh
     }
-header .pages-box:hover {
-        height: 37.03704vh;
-        overflow: visable;
-        width: 100px;
+    header .pages-box:hover {
+    height: 37.03704vh !important;
+}
+
+    header .pages-box.opened {
+        height: 37.03704vh
     }
+header .pages-box:hover .page-list {
+    display: block;
+    opacity: 1;
+}
     header .pages-box .change-page {
-        font-size: 3vh;
+        font-size: 1.2963vh;
         border-radius: 2.22222vh;
-        padding: 3vh 3.2vh
+        padding: 0.64815vh 1.75926vh
     }
+
     header .pages-box .change-page:after {
         border-width: .05vw;
         border-radius: 2.22222vh
@@ -253,13 +257,14 @@ header .pages-box:hover {
     header .pages-box .page-list {
         border-radius: 1.38889vh;
         margin-top: 0.92593vh;
-        padding: 3vh 3.2vh;
-        list-style: none;
+        padding: 0.92593vh 0
     }
+
     header .pages-box .page-list li a {
-        font-size: 4vh;
-        padding: 0.83333vh 1.75926vh;
+        font-size: 1.11111vh;
+        padding: 0.83333vh 1.75926vh
     }
+
      body h1 {
         width: 55vh;
         height: 35.18519vh
@@ -287,4 +292,269 @@ body .monitor-contents:after,body .monitor-contents video {
     top: 0;
     left: 0;
     object-fit: cover;
+}
+
+
+header .pages-box {
+    position: absolute;
+    top: 4.3vh;
+    right: 4.7vw;
+    height: 30px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    overflow: hidden
+}
+
+header .pages-box.opened {
+    height: 400px
+}
+
+header .pages-box a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    position: relative;
+    letter-spacing: .06em
+}
+
+header .pages-box .change-page {
+    font-size: 14px;
+    background: rgba(0,0,0,.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 24px;
+    padding: 7px 19px
+}
+
+header .pages-box .change-page:after {
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fffc00;
+    border: 1px solid var(--color-yellow);
+    border-radius: 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+header .pages-box .page-list {
+    background: rgba(0,0,0,.5);
+    border-radius: 15px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 10px 0
+}
+
+header .pages-box .page-list li a {
+    font-size: 12px;
+    padding: 9px 19px
+}
+
+body .store:before {
+        width: 11.2037vh;
+        height: 10.74074vh;
+        top: -3.24074vh;
+        left: -4.72222vh;
+    }
+     body .store:after {
+        width: 11.11111vh;
+        height: 11.2963vh;
+        bottom: -2.31481vh;
+        right: -5.64815vh
+    }
+body .store-title {
+        width: 38.14815vh
+    }
+body .store:after,body .store:before {
+    content: "";
+    position: absolute;
+    background-size: contain!important
+}
+body .store:before {
+    background: url(assets/store_deco1_5f1ef71f4d54ada4b61e2764a9cb2be7.png) 0 0 no-repeat;
+    width: 121px;
+    height: 116px;
+    top: -35px;
+    left: -31px
+}
+body .store:after {
+    background: url(assets/store_deco2_403464953c36fe9e326091aaab2702ce.png) 0 0 no-repeat;
+    width: 120px;
+    height: 122px;
+    bottom: -25px;
+    right: -61px
+}
+body .text-decoration p {
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .21em;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+body .text-decoration p span {
+    color: #fffc00;
+    color: var(--color-yellow)
+}
+
+body .text-decoration p:first-child {
+    right: 1vw;
+}
+
+body .text-decoration p:last-child {
+    left: 1vw
+}
+body .text-decoration p {
+        font-size: 0.78125vw;
+    }
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.fadeIn.show {
+    -webkit-transition: opacity .5s ease-in-out .2s;
+    transition: opacity .5s ease-in-out .2s;
+    opacity: 1!important;
+    pointer-events: auto
+}
+ 
+header .pf-box {
+    width: 828px;
+    position: absolute;
+    top: 4.3vh;
+    left: 4.7vw
+}
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom
+}
+   header .pf-box {
+        width: 76.66667vh;
+    }
+body .store-box .store-btn:after {
+    content: "";
+    width: 110%;
+    height: 150%;
+    background: webkit-gradient(linear,left top,left bottom,color-stop(15.75%,#00deff),color-stop(85.73%,#0af));
+    background: linear-gradient(180deg,#00deff 15.75%,#0af 85.73%);
+    -webkit-transform: matrix(1,0,-.51,.86,0,0) scaleX(0);
+    transform: matrix(1,0,-.51,.86,0,0) scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    position: absolute;
+    top: -.5vw;
+    left: -.5vw
+}
+@media (750px < width) and (height < 1080px) {
+    header .pf-box {
+        width: 76.66667vh;
+    }
+
+    header .pages-box {
+        height: 2.96296vh
+    }
+
+    header .pages-box.opened {
+        height: 37.03704vh
+    }
+
+    header .pages-box .change-page {
+        font-size: 1.2963vh;
+        border-radius: 2.22222vh;
+        padding: 0.64815vh 1.75926vh
+    }
+
+    header .pages-box .change-page:after {
+        border-width: .05vw;
+        border-radius: 2.22222vh
+    }
+
+    header .pages-box .page-list {
+        border-radius: 1.38889vh;
+        margin-top: 0.92593vh;
+        padding: 0.92593vh 0
+    }
+
+    header .pages-box .page-list li a {
+        font-size: 1.11111vh;
+        padding: 0.83333vh 1.75926vh
+    }
+    body h1 {
+        width: 49.72222vh;
+        height: 35.18519vh
+    }
+
+    body .trailer {
+        width: 36.2037vh;
+        height: 11.66667vh
+    }
+
+    body .trailer>span {
+        width: 34.81481vh;
+        height: 10.27778vh
+    }
+
+    body .trailer-text {
+        width: 22.22222vh;
+        height: 3.7963vh;
+        margin-top: 3.98148vh
+    }
+
+    body .store {
+        width: 78.88889vh;
+        border-radius: 1.85185vh;
+        padding: 1.75926vh 0
+    }
+
+    body .store:before {
+        width: 11.2037vh;
+        height: 10.74074vh;
+        top: -3.24074vh;
+        left: -4.72222vh
+    }
+
+    body .store:after {
+        width: 11.11111vh;
+        height: 11.2963vh;
+        bottom: -2.31481vh;
+        right: -5.64815vh
+    }
+
+    body .store-title {
+        width: 38.14815vh
+    }
+
+    body .store-box {
+        margin-top: 1vw
+    }
+
+    body .store-box .store-btn {
+        width: 16.66667vh;
+        height: 3.7037vh;
+        border-radius: 1.85185vh;
+        font-size: 1.66667vh;
+        margin: 0 0.55556vh
+    }
 }
