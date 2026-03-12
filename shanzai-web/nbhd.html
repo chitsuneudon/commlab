@@ -10,11 +10,9 @@
 <body>
     <div id="container">
         <div class="monitor-contents">
-            <video id="monitor" playsinline autoplay muted loop>
-                <source media="(max-width: 1000px)" src="/assets/p4re.mp4" type="video/mp4">
-                <source media="(min-width: 1000px)" src="/assets/p4re.mp4" type="video/mp4">
-
-            </video>
+            <video preload="auto" autoplay muted playsinline loop id="monitor" style="left: 0px;">
+                    <source src="assets/p4re.mp4" type="video/mp4">
+                </video>
         </div>
         <div class="monitor-overlay" style="background-image: url(/assets/monitor_overlay.png);"></div>
         <div class="monitor-gradient"></div>
