@@ -1,0 +1,110 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, section, header, menu, nav, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+}
+ul {
+  list-style: none;
+}
+a img {
+  border: none;
+}
+menu, header, main, nav {
+    display: block;
+}
+body {
+  font-family: "Noto Serif JP", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  -webkit-text-size-adjust: 100%;
+  color: #fff;
+  background: #000;
+  position: relative;
+}
+.container {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+section {
+  position: relative;
+}
+.wrapper {
+  width: 1200px;
+  position: relative;
+  margin: auto;
+}
+main {
+  display: block;
+}
+a {
+  cursor: pointer;
+  outline: none;
+}
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.v-pc {
+  display: block;
+}
+
+.v-sp {
+  display: none;
+}
+header {
+  width: 100%;
+  background: url(assets/header.jpg) center top repeat-x;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+}
+header .header-nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      height: 95px;
+    }
+header .header-nav ul li {
+        margin-top: 20px;
+        margin-right: 20px;
+        position: relative;
+      }
+header .header-nav ul li a {
+          position: relative;
+          display: block;
+        }
+.pages-box {
+  width: 181px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 15px;
+  top: 83px;
+  right: 0;
+  z-index: 100;
+}
+.pages-box a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .pages-box .change-page {
+    background: url(../../resources/img/common/btn_lang_4fd36c751dfc7bda45dd817c2380a7a0.png) no-repeat center top;
+    width: 181px;
+    height: 38px;
+
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-left: auto;
+    position: relative;
+  }

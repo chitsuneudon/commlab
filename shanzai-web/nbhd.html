@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neighborhood Story</title>
+    <title>p4r</title>
 
     <link rel="stylesheet" href="stry.css">
 </head>
@@ -11,67 +11,81 @@
     <div id="container">
         <div class="monitor-contents">
             <video id="monitor" playsinline autoplay muted loop>
-                <source media="(max-width: 1000px)" src="https://chitsuneudon.github.io/commlab/shanzai-web/assets/betterintro.mp4" type="video/mp4">
-                <source media="(min-width: 1000px)" src="https://chitsuneudon.github.io/commlab/shanzai-web/assets/betterintro.mp4" type="video/mp4">
+                <source media="(max-width: 1000px)" src="/assets/p4re.mp4" type="video/mp4">
+                <source media="(min-width: 1000px)" src="/assets/p4re.mp4" type="video/mp4">
 
             </video>
         </div>
-        <div class="monitor-overlay" style="background-image: url(assets/frame.png);"></div>
+        <div class="monitor-overlay" style="background-image: url(/assets/monitor_overlay.png);"></div>
         <div class="monitor-gradient"></div>
         <div class="monitor-frame-shadow"></div>
         <div class="monitor-frame image-loaded" style="background-image: url(/assets/frame.png);"></div>
-        <div class="text-decoration"></div>
+        <!-- <div class="text-decoration">
+            <p>
+                <span dir="auto" style="vertical-align: inherit;">
+                   PERSONA4 
+                </span>
+                <span dir="auto" style="vertical-align: inherit;">
+                    REVIVAL
+                </span>
+            </p>
+            <p>
+                <span dir="auto" style="vertical-align: inherit;">OFFICIAL WEBSITE</span>
+            </p>
+        </div> -->
         <header class="fadeIn show">
+            <div class="pf-box">
+                <source media="(max-width:750px)">
+                <img src="assets/pf-box.png" alt="">
+            </div>
             <div class="pages-box">
                 <a class="change-page" title="PAGES">
                     PAGES
                 </a>
                 <ul class="page-list">
                     <li>
-                        <a class="page-list-link" href="index.html" target="_blank">Main</a>
+                        <a class="page-list-link" href="index.html">Main</a>
                     </li>
                     <li>
-                        <a class="page-list-link" href="nbhd.html" target="_blank">Nbhd Story</a>
+                        <a class="page-list-link" href="nbhd.html">P4RE</a>
                     </li>
                     <li>
-                        <a class="page-list-link" href="nana.html" target="_blank">Nana</a>
-                    </li>
-                    <li>
-                        <a class="page-list-link" href="parakiss.html" target="_blank">Parakiss</a>
+                        <a class="page-list-link" href="parakiss.html">Parakiss</a>
                     </li>
                 </ul>
             </div>
         </header>
         <h1 class="fadeIn show">
-            <img src="assets/happy-berry.png" alt="happy-berry">
+            <img src="/assets/logo.gif" alt="LOGO">
         </h1>
-        <a href="https://www.youtube.com/watch?v=0r8ECw4C5as" class="trailer fadeIn show" data-fancybox>
+        <a href="parakiss.html " class="trailer fadeIn show" data-fancybox>
             <span class="trailer-pink">
-                <img src="assets/trailer-pink.png" alt="">
+                <img src="/assets/trailer-pink.png" alt="">
             </span>
             <span class="trailer-blue">
-                <img src="assets/trailer-blue.png" alt="">
+                <img src="/assets/trailer-blue.png" alt="">
             </span>
         </a>
         <div class="trailer-text fadeIn show">
-            <img src="assets/play.png" alt="">
+            <img src="/assets/play.png" alt="">
         </div>
         <div class="store fadeIn show">
             <h2 class="store-title">
-                <img src="assets/title.png" alt="">
+                <source media="(max-width: 750px;)">
+                <img src="/assets/store-title.png" alt="">
             </h2>
             <div class="store-box">
-                <a href="https://www.viz.com/neighborhood-story" id="store-btn-official" class="store-btn" title="Official" target="_blank">
-                    <span>Official</span>
+                <a href="https://p4re.jp/" id="store-btn-official" class="store-btn" title="Official" target="_blank">
+                    <span>Original</span>
                 </a>
-                <a href="https://www.imdb.com/title/tt0346285/" id="store-btn-anime" class="store-btn" title="Anime" target="_blank">
-                    <span>Anime</span>
+                <a href="https://www.xbox.com/ja-jp/games/store/r/9N40DK5N4LD4/" id="store-btn-anime" class="store-btn" title="Anime" target="_blank">
+                    <span>Windows</span>
                 </a>
-                <a href="https://en.wikipedia.org/wiki/Neighborhood_Story" id="store-btn-wiki" class="store-btn" title="Wiki" target="_blank">
-                    <span>Wiki</span>
+                <a href="https://store.playstation.com/ja-jp/concept/10011107" id="store-btn-wiki" class="store-btn" title="Wiki" target="_blank">
+                    <span>Playstation</span>
                 </a>
-                <a href="https://lineup.toei-anim.co.jp/en/tv/gokinjyo/" id="store-btn-info" class="store-btn" title="Info" target="_blank">
-                    <span>Info</span>
+                <a href="https://store.steampowered.com/app/2963950/Persona_4_Revival/" id="store-btn-info" class="store-btn" title="Info" target="_blank">
+                    <span>Steam</span>
                 </a>
             </div>
         </div>
