@@ -54,9 +54,7 @@ body {
     object-fit: cover !important;
     overflow: hidden;
 }
-/* .heading {
-    display: flex;
-} */
+
 
  .bold {
     font-weight: 800;
