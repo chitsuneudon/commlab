@@ -11,6 +11,9 @@ body{
     align-items: center;
     margin: auto;
 
+    left: 0px;
+    position: relative;
+    transition: left 1s ease-in-out;
 }
 .box{
     width: 100px;

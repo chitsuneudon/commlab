@@ -42,14 +42,13 @@ function myOwnFunction(){
 
 // select the headline element and save the selection in a variable:
 
-// let headline = ...;
+let headline = document.querySelector("h1");
 
 function changeText(){
-
+    headline.innerText = "Hello!";
 }
 function changeHTML(){
-
+    headline.innerHTML = "Hello!"
 }
 function changeStyle(){
-
 }
